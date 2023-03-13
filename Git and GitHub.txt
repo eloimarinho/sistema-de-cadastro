@@ -1,0 +1,79 @@
+- repo.new - cria um novo repositório no GitHub;
+
+- Markdown ou .md - linguagem de marcação GitHub;
+	- Aceita tag's HTML;
+	- Editores online:
+		- Dillinger
+			- https://dillinger.io/
+		- Markdown Preview
+			- https://markdownlivepreview.com/
+		- MEditor
+			- https://pandao.github.io/editor.md/en.html
+		- Próprio GitHub
+		-VS Code
+	- Nosso **primeiro exemplo** de trecho de texto em markdown. (negrito)
+	- Aqui tem uma [página com os códigos mais frequentes](https://en.support.wordprss.com/markdown-quick-reference/) do Markdown. (colocando um link)
+
+- README
+	- O que é?
+		- Descrição do projeto;
+		- Funcionalidades;
+		- Como os usuários podem utilizar;
+		- Onde os usuários podem encontrar ajuda sobre o projeto;
+		- Autores do projeto.
+	- O que podemos destacar?
+		- Título e Imagem de capa;
+    	- Badges (emblemas ou insígnia);
+    	- Índice;
+	    - Descrição do Projeto;
+	    - Status do Projeto;
+	    - Funcionalidades e Demonstração da Aplicação;
+	    - Acesso ao Projeto;
+	    - Tecnologias utilizadas;
+	    - Pessoas Contribuidoras;
+	    - Pessoas Desenvolvedoras do Projeto;
+	    - Licença.
+
+- Commit - rotulo da alterações realizadas.
+
+- segurar "." - abre um VS Code online no GitHub.
+
+- https://docs.github.com/pt/get-started/using-git/about-git - link de documentação sobre git do GitHub;
+- https://docs.github.com/pt/enterprise-server@3.2/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent - configurando a chave do Git.
+
+- branch é uma ninha paralela a linha principal do meu projeto (ramificações)
+
+- o "." sempre vai enviar ou cimmitar aquele diretório e os diretório que estão nele.
+
+// TERMINAL //
+- git clone link.git - clonar o projeto em local.
+- git push --mirror https://github.com/eloimarinho/REPO.git - criar um espelho.
+- git log
+	- git log - ver os cimmits.
+	- git log --oneline - ver os commits resumidos.
+	- git log -p - para ver mais, com alterações do commit.
+	- git log --author="user_name" - informações do autor do commit.
+	- git log --since=1.month.ago --until=1.day.ago - pesquisar informações por data (no exemplo puxamos de um mês atrás até um dia atrás)
+- git pull link.git - serve para puxar a ultima atualização. OBS.: FAZENDO O CODIGO ATÉ O PULL ELE JÁ IDENTIFICA TODO O PROJETO
+- git status - sabe as alterações feitas.
+- git config --global user.name "nomedeusuario" - configurando nome de usuário.
+- git config --global user.email "email" - cinfigurando o email.
+- git commit nomedoarquivo.html -m "alterações do commit" - criar um commit. OBS.: USANDO UM "." APÓS O COMMIT JÁ FAZ O COMMIT DE TODO O PROJETO
+- git push origin main - empurar os commitis. OBS.: FAZENDO O CODIGO ATÉ O PUSH ELE JÁ IDENTIFICA TODO O PROJETO
+- git restore --source NumeroHexaDecimalDoCommit arquivo.js - restaura como principal um codigo mais antigo (indicado pelo hexadecimal do commit)
+- git add - adiciona os arquivos que queremos para o próximo commit através do git add.
+
+- criar um branch no seu projet
+	- git checkout - b nome_da_branch
+	- git branch nome_da_branch
+
+- git switch main - retorna para a principal, se mudar para main pelo nome de outra branch você terá acesso a ela 
+- git push origin nomedabranch - faz um push para a branch
+- git branch - vejo em qual branch estou
+
+
+merge - enviar para a principal (main)
+	- git switc main - para retornar para main
+	- git log --oneline - para pegar o ID
+	- git merge dnome_da_branch - para levar para a main
+	- git push origin main 
